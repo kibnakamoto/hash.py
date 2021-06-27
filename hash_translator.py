@@ -1,4 +1,6 @@
 import hashlib
+import random
+
 
 hash_choices = "sha512 or sha256 or md5"
 print(f"choices: {hash_choices}")
@@ -23,6 +25,5 @@ elif move == "md5":
 else:
     print("invalid choice")
     while True:
-        result = hashlib.sha256()
-        print(result.hexdigest())
-#there are only 3 options at the moment but will be upgraded
+        result = random.getrandbits(494)
+        print(result)
